@@ -42,7 +42,7 @@ class Compute {
         for (int i = 1; i <= N; i++) {
             int flag = 0;
             for (int j = 0; j < N - 1; j++) {
-                if (A[j] == i) {
+                if (A[j] == i) {  //a[0]==1 ---> 1==1
                     flag = 1;
                     break;
                 }
