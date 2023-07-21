@@ -7,6 +7,7 @@ class Solution {
             n++;
             if (10_000_000 < n && n < 100_000_000)
                 n= 100_000_000;
+/*If n is range btw 10,000,000 and 100,000,000,set n=100,000,000, which is the next palindrome number after 10,000,000, and then continues to the next iteration*/
         
         }
         
