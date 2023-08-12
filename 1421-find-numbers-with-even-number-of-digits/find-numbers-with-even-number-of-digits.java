@@ -25,11 +25,15 @@ class Solution {
         if(n==0){
             return 1;
         }
-        while(n>0){
-            count++;
-            n=n/10;
-        }
-        return count;
+        // while(n>0){
+        //     count++;
+        //     n=n/10;
+        // }
+        // return count;
+
+        //shortcut to find num of digits
+
+        return (int)(Math.log10(n)) + 1;
     }
 
     }
