@@ -4,9 +4,6 @@ class Solution {
       for(int i=0;i<sentence.length();i++){
           map.put(sentence.charAt(i),1);
       }
-      if(map.size()==26){
-        return true;
-      }
-      return false;
+      return map.size()==26;
     }
 }
