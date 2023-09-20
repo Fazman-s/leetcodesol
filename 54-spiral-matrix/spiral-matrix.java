@@ -8,11 +8,13 @@ class Solution {
         int top=0, bottom=n-1;
 
         while(top <= bottom && left <= right){
-            //traverse right
+            //right to left
             for(int i=left;i<=right;i++){
                 ans.add(matrix[top][i]);
             }
             top++;
+
+            //top to bottom
 
             for(int i=top;i<=bottom;i++){
                 ans.add(matrix[i][right]);
@@ -20,6 +22,7 @@ class Solution {
             right--;
 
             if(top <= bottom){
+                //right to left
                 for(int i=right;i>=left;i--){
                     ans.add(matrix[bottom][i]);
                 }
@@ -27,6 +30,7 @@ class Solution {
             }
             
             if(left <= right){
+                //bottom to top
                 for(int i=bottom;i>=top;i--){
                     ans.add(matrix[i][left]);
                 }
