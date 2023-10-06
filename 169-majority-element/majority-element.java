@@ -2,6 +2,7 @@ class Solution {
     public int majorityElement(int[] nums) {
         //optimal solution
         //Moore's voting algo
+        //Time complexity : O(n)
         int n=nums.length;
         int count=0;
         int el=0;
