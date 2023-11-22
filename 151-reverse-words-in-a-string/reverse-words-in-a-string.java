@@ -11,5 +11,21 @@ class Solution {
             
         }
         return sb.toString();
+
+
+        /*
+         // Initialize the output string
+        String out = "";
+
+        // Iterate through the words in reverse order
+        for (int i = words.length - 1; i > 0; i--) {
+            // Append the current word and a space to the output
+            out += words[i] + " ";
+        }
+
+        // Append the first word to the output (without trailing space)
+        return out + words[0];
+        */
+
     }
 }
